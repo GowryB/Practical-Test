@@ -54,3 +54,25 @@ app.post("/records", (req, res) => {
     return res.json(data);
   });
 });
+
+//update Hobbies
+app.put("/update/:id", (req, res) => {
+  const sql = "UPDATE records set HobbyName = ? Type = ? where HID =?";
+  const values = [req.body.HobbyName, req.body.Type];
+  const id = req.params.id;
+  db.query(sql, [...values, id], (err, data) => {
+    if (err) return res.json("Error");
+    return res.json(data);
+  });
+});
+
+//Delete Hobies
+app.delete("/records/:id", (req, res) => {
+  const sql = "DELETE FROM records WHERE ID =?";
+  const id = req.params.id;
+
+  db.query(sql, [...values, id], (err, data) => {
+    if (err) return res.json("Error");
+    return res.json(data);
+  });
+});
