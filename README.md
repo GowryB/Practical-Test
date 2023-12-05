@@ -1,14 +1,16 @@
 # Practical-Test
-1.Backend
-Language: mysql,nodejs
+1. Backend
+Language: MySQL,nodejs
 
-2.hobby - Frontend
-Language : Reactjs
-framework : bootstrap
+2. hobby - Frontend
+Language: Reactjs
+framework: bootstrap
 
-Database - hobby
+Database Name - hobby
+
 tables : 
-users for adding Registraion details.
+users for adding registration details.
 
 records for adding hobbies.
+
 
