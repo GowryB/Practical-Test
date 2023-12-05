@@ -9,8 +9,9 @@ framework: bootstrap
 Database Name - hobby
 
 tables : 
-users for adding registration details.
 
+users for adding registration details.
+Attributes: UserName, Password, Email, Mobile, Home
 records for adding hobbies.
 
 
