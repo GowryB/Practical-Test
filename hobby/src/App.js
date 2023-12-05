@@ -1,4 +1,5 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 //For rounting
 import { BrowserRouter, Routes, Route } from "react-router-dom";

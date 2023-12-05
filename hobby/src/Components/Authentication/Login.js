@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Form from "react-bootstrap/Form";
 
 import Button from "react-bootstrap/Button";
 
-import "./Login.css";
+import "./style.css";
 
 export default function Login() {
   const [UserName, setUserName] = useState("");
@@ -12,7 +12,7 @@ export default function Login() {
   const [Password, setPassword] = useState("");
 
   function validateForm() {
-    return UserName.length > 0 && password.length > 0;
+    return UserName.length > 0 && Password.length > 0;
   }
 
   function handleSubmit(event) {
